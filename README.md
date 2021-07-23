@@ -2,14 +2,14 @@
 ```javascript
 // Example - 1
 const betterDiscord = require("betterDiscord.js");
-const Discord = betterDiscord(require("discord.js"));
+const Discord = new betterDiscord(require("discord.js"));
 
 Discord.userLogin(false) // default value : true
 Discord.unLimit(false) // default value : true
 
 // Example - 2
 const betterDiscord = require("betterDiscord.js");
-const Discord = betterDiscord(
+const Discord = new betterDiscord(
   require("discord.js"),
   {
     "user_login": true,
